@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainer Coetzer | Aspiring Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#004E64',    /* Dark Teal - Main Background/Text */
+                            primary: '#00A5CF', /* Turquoise Surf - Main Accents/Buttons */
+                            mint: '#9FFFCB',    /* Aquamarine - Highlights/Light BG */
+                            teal: '#25A18E',    /* Verdigris - Secondary Accents */
+                            light: '#7AE582',   /* Light Green - Subtle pops */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Small override to ensure the new dark color works if you have a custom CSS background */
+        .hero-bg-custom {
+            background-color: #004E64;
+            background-image: linear-gradient(135deg, #004E64 0%, #002a36 100%);
+        }
+        .nav-blur {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-brand-dark font-sans">
+
+    <nav class="fixed w-full z-50 nav-blur border-b border-brand-primary/20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <span class="text-xl font-bold text-brand-dark tracking-tighter flex items-center gap-2">
+                    <i class="fas fa-terminal text-brand-primary"></i> RAINER.DEV
+                </span>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-slate-600 hover:text-brand-primary transition">About</a>
+                    <a href="#skills" class="text-slate-600 hover:text-brand-primary transition">Skills</a>
+                    <a href="#projects" class="text-slate-600 hover:text-brand-primary transition">Projects</a>
+                    <a href="#experience" class="text-slate-600 hover:text-brand-primary transition">Experience</a>
+                    <a href="mailto:rainie.coetzer@gmail.com" class="bg-brand-primary text-white px-5 py-2.5 rounded-full font-semibold hover:bg-brand-dark transition shadow-lg shadow-brand-primary/30">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="hero-bg-custom pt-40 pb-32 px-4 relative overflow-hidden">
+        <div id="particles-js" class="absolute inset-0 opacity-30"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest text-brand-mint uppercase bg-white/10 border border-brand-mint/30 rounded-full">
+                Available for Junior Roles
+            </div>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-8 tracking-tight text-white">
+                Rainer <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-mint to-brand-primary">Coetzer</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
+                Computer Science student at <span class="text-brand-mint font-semibold underline decoration-brand-primary">NUST</span>. 
+                Aspiring software Developer
+            </p>
+            <div class="flex flex-wrap justify-center gap-5">
+                <a href="https://github.com/Rainer-Coetzer" target="_blank" class="group flex items-center gap-3 px-8 py-4 bg-brand-primary text-white rounded-2xl hover:bg-brand-teal transition-all duration-300 shadow-xl shadow-brand-dark/50">
+                    <i class="fab fa-github text-xl"></i> 
+                    <span class="font-semibold">Explore GitHub</span>
+                    <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+                <a href="mailto:rainie.coetzer@gmail.com" class="flex items-center gap-3 px-8 py-4 bg-transparent text-brand-mint border border-brand-mint/50 rounded-2xl hover:bg-brand-mint/10 transition-all duration-300">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-brand-dark">Technical Arsenal</h2>
+                <div class="h-1.5 w-20 bg-brand-primary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group p-10 bg-slate-50 rounded-3xl border border-slate-100 hover:border-brand-primary transition-all shadow-sm hover:shadow-md">
+                    <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center mb-8 text-brand-primary group-hover:scale-110 transition-transform">
+                        <i class="fas fa-code fa-2x"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 text-brand-dark">Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">Java</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">JavaScript</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">Python</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">C#</span>
+                    </div>
+                </div>
+
+                <div class="group p-10 bg-slate-50 rounded-3xl border border-slate-100 hover:border-brand-primary transition-all shadow-sm hover:shadow-md">
+                    <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center mb-8 text-brand-primary group-hover:scale-110 transition-transform">
+                        <i class="fas fa-laptop-code fa-2x"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 text-brand-dark">Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">HTML5</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">css</span>
+                    </div>
+                </div>
+
+                <div class="group p-10 bg-slate-50 rounded-3xl border border-slate-100 hover:border-brand-primary transition-all shadow-sm hover:shadow-md">
+                    <div class="w-14 h-14 bg-brand-primary/10 rounded-2xl flex items-center justify-center mb-8 text-brand-primary group-hover:scale-110 transition-transform">
+                        <i class="fas fa-database fa-2x"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-6 text-brand-dark">Backend & Data</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">SQL</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">DB Design</span>
+                        <span class="px-3 py-1 bg-white border border-slate-200 rounded-lg text-sm font-medium text-slate-600">mysql</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-4 bg-slate-50/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-brand-dark">Selected Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 hover:border-brand-light transition duration-300 shadow-sm flex flex-col">
+                    <h3 class="text-xl font-bold mb-3 text-brand-dark">Job Management</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">Database-centric application for tracking career opportunities and applications.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-xs font-bold text-brand-teal uppercase tracking-wider">SQL / Java</span>
+                        <a href="https://github.com/Rainer-Coetzer/DataBase-Programming" target="_blank"><i class="fab fa-github text-slate-400 hover:text-brand-primary transition"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl p-8 border border-slate-100 hover:border-brand-light transition duration-300 shadow-sm flex flex-col">
+                    <h3 class="text-xl font-bold mb-3 text-brand-dark">Weather App</h3>
+                    <p class="text-slate-600 text-sm mb-6 flex-grow">Real-time weather data visualization using modern API integrations.</p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-xs font-bold text-brand-teal uppercase tracking-wider">JavaScript</span>
+                        <a href="https://github.com/Rainer-Coetzer/Programming-2" target="_blank"><i class="fab fa-github text-slate-400 hover:text-brand-primary transition"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-3xl font-bold mb-10 text-brand-dark">Experience</h2>
+                    <div class="space-y-8 border-l-2 border-brand-primary/20 pl-8">
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-brand-primary border-4 border-white shadow-sm"></div>
+                            <h4 class="font-bold text-lg text-brand-dark">IT Support Technician</h4>
+                            <p class="text-brand-teal text-sm font-semibold mb-2">Rabes Body Repairs | 2024 - 2025</p>
+                            <p class="text-slate-600 text-sm">System maintenance and software troubleshooting.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-slate-200 border-4 border-white shadow-sm"></div>
+                            <h4 class="font-bold text-lg text-brand-dark">Sales & Technical Support</h4>
+                            <p class="text-brand-teal text-sm font-semibold mb-2">NanoDog | 2023</p>
+                            <p class="text-slate-600 text-sm">Customer consultations and product technical support.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-10 text-brand-dark">Education</h2>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-brand-dark rounded-3xl text-white shadow-lg shadow-brand-dark/20">
+                            <div class="flex items-start justify-between">
+                                <div>
+                                    <h4 class="font-bold text-lg text-white">B. Computer Science</h4>
+                                    <p class="text-brand-mint text-sm">Namibia University of Science & Technology</p>
+                                </div>
+                                <i class="fas fa-graduation-cap text-brand-primary text-xl"></i>
+                            </div>
+                            <p class="text-xs mt-4 opacity-60 font-mono">2024 - Present</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                            <h4 class="font-bold text-brand-dark">Harvard CS50x</h4>
+                            <p class="text-sm text-slate-500">Intro to Computer Science (2024)</p>
+                        </div>
+                        <div class="p-6 bg-slate-50 rounded-3xl border border-slate-100">
+                            <h4 class="font-bold text-brand-dark">Meta Coursera</h4>
+                            <p class="text-sm text-slate-500">Programming with JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark py-16 text-white text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <h3 class="text-3xl font-bold mb-6">Ready to collaborate?</h3>
+            <div class="flex justify-center gap-8 mb-12">
+                <a href="https://github.com/Rainer-Coetzer" target="_blank" class="text-2xl hover:text-brand-primary transition hover:-translate-y-1"><i class="fab fa-github"></i></a>
+                <a href="mailto:rainie.coetzer@gmail.com" class="text-2xl hover:text-brand-primary transition hover:-translate-y-1"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+264813372352" class="text-2xl hover:text-brand-primary transition hover:-translate-y-1"><i class="fas fa-phone"></i></a>
+            </div>
+            <p class="text-brand-mint/50 text-sm tracking-widest uppercase font-bold">© 2025 Rainer Coetzer • Windhoek, Namibia</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
